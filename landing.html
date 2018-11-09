@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Main Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+     
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn" type="button" style="background:grey">
+              <i class="fa fa-search" ></i>
+            </button>
+          </div>
+        </div>
+      </form>
+        </a>
+        <div class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: grey">
+            <i class="fas fa-user-circle" style="color: grey"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" style="color: grey"  aria-labelledby="userDropdown">
+           <!--  <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Activity Log</a> -->
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" id="logout" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          </div>
+        </div>
+          
+      </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="masthead container text-center">
+    
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+                <div id="MyClockDisplay" class="clock"></div>
+                <!--<canvas id="canvas" width="200" height="200"></canvas>-->
+            <h1 class="mb-5" id="user"> 
+            </h1>
+          </div>
+          
+        </div>
+      <div class="container">
+       
+        <div class="slider">
+            <div class="tiles">
+              <div class="tile">
+                 <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                 <div class="tile-heading"> Leadership</div>
+              </div>
+              <div class="tile-expanded">
+                 <div class="tile-heading">Leadership</div>
+                 <div class="tile-expanded--content">
+                    <div>
+                       <div>
+                          <a href="infra.html"> <span class="icon"><i class="fa fa-server" aria-hidden="true"></i></span>
+                          <h3>Infrastructure</h3></a>
+                       </div>
+                      </div>
+                    <div>
+                       <div>
+                        <a href="coming.html"> 
+                          <span class="icon"><i class="fa fa-signal" aria-hidden="true"></i></span>
+                          <h3>Service levels </h3>
+                        </a>
+                       </div>
+                       
+                    </div>
+                    <div>
+                       <div>
+                            <a href="coming.html"> <span class="icon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                          <h3><span> Escalation management</span></h3></a>
+                       </div>
+                      
+                    </div>
+                 </div>
+                
+              </div>
+           </div>
+            <div class="tiles">
+              <div class="tile">
+                 <span class="icon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
+                
+
+                 <div class="tile-heading">Project Management</div>
+              </div>
+              <div class="tile-expanded">
+                 <div class="tile-heading">Project Management</div>
+                 <div class="tile-expanded--content">
+                    <div>
+                       <div>
+                          <span class="icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+                          <h3>New Project</h3>
+                       </div>
+                      </div>
+                    <div>
+                       <div>
+                         <span class="icon"><i class="fa fa-folder" aria-hidden="true"></i></span>
+                          
+                          <h3>My Projects</h3>
+                       </div>
+                       
+                    </div>
+                    <div>
+                       <div>
+                         <span class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                          <h3><span>My Approvals</span></h3>
+                       </div>
+                      
+                    </div>
+                 </div>
+                
+              </div>
+           </div>
+           <div class="tiles">
+              <div class="tile">
+                 <!-- <img src="image1.webp" width="50px" height="50px">  -->
+                 <span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+                 <div class="tile-heading">Service Desk</div>
+              </div>
+              <div class="tile-expanded">
+                 <div class="tile-heading">Service Desk</div>
+                 <div class="tile-expanded--content">
+                    <div>
+                       <div>
+                          <span class="icon"><i class="fa fa-life-ring" aria-hidden="true"></i></span>
+                         
+                          <h3>Operations</h3>
+                       </div>
+                      </div>
+                    <div>
+                       <div>
+                          <span class="icon"><i class="fa fa-cube" aria-hidden="true"></i></span>
+                         
+                          <h3>Volume</h3>
+                       </div>
+                       
+                    </div>
+                    <div>
+                       <div>
+                          <span class="icon"><i class="fa fa-tasks" aria-hidden="true"></i></span>
+                         
+                          <h3><span>Queue Management</span></h3>
+                       </div>
+                      
+                    </div>
+                 </div>
+                
+              </div>
+           </div>
+        </div>
+     </div>
+    </header>
+
+
+
+    <!-- Footer -->
+ <!--    <footer class="footer bg-light">
+      <div class="container">
+     
+      </div>
+    </footer> -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/landing.js"></script>
+   
+  </body>
+
+</html>
